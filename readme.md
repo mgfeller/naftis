@@ -4,13 +4,13 @@
 replace _n_ by the correct version:
 
 ````sh 
-docker build --tag=yix-naftis:n --tag=yix-naftis:latest --rm=true --build-arg JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar . 
+docker build --tag=naftis:n --tag=naftis:latest --rm=true --build-arg JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar . 
 ````
 
 run naftis:
 
 ````sh
-docker run -p 8080:8080 yix-naftis:latest
+docker run -p 8080:8080 naftis:latest
 ````
 
 POST some commands:
