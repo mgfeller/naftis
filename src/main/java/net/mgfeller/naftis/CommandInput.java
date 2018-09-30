@@ -1,6 +1,8 @@
 package net.mgfeller.naftis;
 
+import java.util.Collections;
 import java.util.Map;
+import java.util.Optional;
 
 public class CommandInput {
     private String externalId;
@@ -13,7 +15,7 @@ public class CommandInput {
         this.externalId = externalId;
         this.command = command;
         this.message = message;
-        this.parameters = parameters;
+        this.parameters = Optional.ofNullable(parameters).orElse(Collections.emptyMap());
         this.sender = sender;
     }
 

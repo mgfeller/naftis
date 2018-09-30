@@ -1,25 +1,11 @@
 package net.mgfeller.naftis;
 
-import java.util.UUID;
+public interface Command {
 
-public class Command {
-    private final CommandInput commandInput;
-    private final String id;
+    String getId();
 
-    public Command(final CommandInput commandInput) {
-        this.commandInput = commandInput;
-        this.id = UUID.randomUUID().toString();
-    }
+    CommandResult getCommandResult();
 
-    public String getId() {
-        return id;
-    }
+    CommandResult execute();
 
-    public CommandInput getCommandInput() {
-        return commandInput;
-    }
-
-    public CommandResult getCommandResult() {
-        return new CommandResult(commandInput, id, CommandStatus.FINISHED);
-    }
 }

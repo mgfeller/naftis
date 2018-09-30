@@ -1,5 +1,5 @@
 package net.mgfeller.naftis;
 
 public enum CommandName {
-    ping, exit, burst, egress
+    ping, echo, exit, shutdown, burst, egress
 }

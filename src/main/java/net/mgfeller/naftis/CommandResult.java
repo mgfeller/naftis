@@ -4,12 +4,21 @@ public class CommandResult {
 
     private final CommandInput commandInput;
     private final String id;
-    private final CommandStatus status;
+    private CommandStatus status;
+    private String commandOutput;
 
-    public CommandResult(CommandInput commandInput, String id, CommandStatus status) {
+    public CommandResult(CommandInput commandInput, String id) {
         this.commandInput = commandInput;
         this.id = id;
-        this.status = status;
+        status = CommandStatus.SUBMITTED;
+    }
+
+    public String getCommandOutput() {
+        return commandOutput;
+    }
+
+    public void setCommandOutput(String commandOutput) {
+        this.commandOutput = commandOutput;
     }
 
     public String getId() {
@@ -18,6 +27,10 @@ public class CommandResult {
 
     public CommandStatus getStatus() {
         return status;
+    }
+
+    public void setStatus(CommandStatus status) {
+        this.status = status;
     }
 
     public CommandInput getCommandInput() {

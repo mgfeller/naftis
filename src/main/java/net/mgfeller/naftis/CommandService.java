@@ -1,5 +1,7 @@
 package net.mgfeller.naftis;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -10,10 +12,16 @@ import java.util.stream.Collectors;
 @Service
 public class CommandService {
 
-    private final ConcurrentMap<String, Command> commands;
+    private final ConcurrentMap<String, Command> commands = new ConcurrentHashMap<>();
 
-    public CommandService() {
-        commands = new ConcurrentHashMap<>();
+    @Value("${naftis.command.store}")
+    private boolean storeCommand;
+
+    private final CommandFactory commandFactory;
+
+    @Autowired
+    public CommandService(CommandFactory commandFactory) {
+        this.commandFactory = commandFactory;
     }
 
     public CommandResult getCommand(final String id) {
@@ -28,8 +36,11 @@ public class CommandService {
     }
 
     public CommandResult submitCommand(CommandInput commandInput) {
-        Command command = new Command(commandInput);
-        commands.put(command.getId(), command);
+        Command command = commandFactory.create(commandInput);
+        if (storeCommand) {
+            commands.put(command.getId(), command);
+        }
+        command.execute();
         return command.getCommandResult();
     }
 }
