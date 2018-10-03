@@ -26,6 +26,7 @@ public abstract class AbstractCommand implements Command {
     @Override
     public final CommandResult execute() {
         String output = run();
+        commandResult.setCommandFinishedAtNow();
         commandResult.setStatus(CommandStatus.COMPLETED);
         commandResult.setCommandOutput(output);
         return commandResult;
