@@ -4,7 +4,7 @@
 replace _n_ by the correct version:
 
 ````sh 
-docker build --tag=naftis:n --tag=naftis:latest --rm=true --build-arg JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar . 
+docker build --tag=naftis:n --rm=true --build-arg JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar . 
 ````
 
 run naftis:
