@@ -18,8 +18,9 @@ POST some commands:
 ````sh
 curl -d '{"externalId":1,"command":"echo","message":"hello","sender":"me"}' -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost:8080/rest/commands
 
-curl -d '{"externalId":1,"command":"egress","message":"hello","sender":"me"}' -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost:8080/rest/commands
+curl -d '{"externalId":1,"command":"egress_http","message":"hello","sender":"me"}' -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost:8080/rest/commands
 
-// If curl does not like ':
-curl -d "{\"externalId\":1,\"command\":\"egress\",\"message\":\"hello\",\"sender\":\"me\"}" -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost:8080/rest/commands
+// If curl or the os does not like ':
+curl -d "{\"externalId\":1,\"command\":\"egress_http\",\"message\":\"hello\",\"sender\":\"me\"}" -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost:8080/rest/commands
+
 ````
