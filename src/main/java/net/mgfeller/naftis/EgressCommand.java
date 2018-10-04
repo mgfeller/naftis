@@ -17,11 +17,12 @@ import javax.net.ssl.SSLContext;
 public class EgressCommand extends AbstractCommand {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(EgressCommand.class);
-    private final boolean https;
+    private final String url;
 
     public EgressCommand(CommandInput commandInput, boolean https) {
         super(commandInput);
-        this.https = https;
+        String uri = commandInput.getParameters().getOrDefault("uri", "httpbin.org/get");
+        url = String.format("%s://%s", https ? "https" : "http", uri);
     }
 
     @Override
@@ -35,7 +36,6 @@ public class EgressCommand extends AbstractCommand {
                     .setSSLHostnameVerifier(new NoopHostnameVerifier())
                     .build();
 
-            String url = https ? "https://httpbin.org/get" : "http://httpbin.org/get";
             HttpGet httpGet = new HttpGet(url);
             httpGet.setHeader("Accept", "text/html");
 
