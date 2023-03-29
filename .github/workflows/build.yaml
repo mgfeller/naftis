@@ -72,7 +72,9 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: naftis:latest
+          tags: |
+            user/app:latest
+            user/app:0.0.1
           build-args: JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar
 
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
