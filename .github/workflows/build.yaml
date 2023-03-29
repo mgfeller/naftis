@@ -37,16 +37,21 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: OSV check
+        continue-on-error: true
         run: |
-          ./osv-scanner --sbom bom.json
+          ./osv-scanner --sbom bom.json --skip-git > osv.txt
+          ./osv-scanner --sbom bom.json --skip-git --format json > osv.json
+          cat osv.txt
 
-      - name: Commit and push SBOMs
+      - name: Commit and push SBOMs and OSVs
         run: |
           git config --global user.name 'Michael Gfeller'
           git config --global user.email '1214008+mgfeller@users.noreply.github.com'
           git add ./bom.json
           git add ./bom.xml
-          git commit -m "Updated SBOM"
+          git add ./osv.txt
+          git add ./osv.json
+          git commit -m "Updated SBOM and OSV"
           git push
 
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
