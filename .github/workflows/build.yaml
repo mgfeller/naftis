@@ -40,7 +40,6 @@ jobs:
         continue-on-error: true
         run: |
           ./osv-scanner --sbom bom.json --skip-git > ./osv.txt
-          ./osv-scanner --sbom bom.json --skip-git --format json > ./osv.json
 
       - name: Commit and push SBOMs and OSVs
         run: |
@@ -49,7 +48,6 @@ jobs:
           git add ./bom.json
           git add ./bom.xml
           git add ./osv.txt
-          git add ./osv.json
           git commit -m "Updated SBOM and OSV"
           git push
 
