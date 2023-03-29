@@ -77,6 +77,14 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mkyong.com/java/java-lang-noclassdeffounderror-javax-xml-bind-jaxbexception/ -->
+        <!-- Adding the old version. Migrated version probably requires updates of Spring Boot etc. -->
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>2.3.3</version>
+        </dependency>
     </dependencies>
 
     <build>
