@@ -39,7 +39,7 @@ jobs:
           git config --global user.name 'Michael Gfeller'
           git config --global user.email '1214008+mgfeller@users.noreply.github.com'
           git add ./CycloneDX-SBOM.json
-          git add ./CycloneDX-SBOM.zml
+          git add ./CycloneDX-SBOM.xml
           git commit -m "Updated SBOM"
           git push
 
