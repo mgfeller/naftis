@@ -36,10 +36,13 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-      - name: OSV check
+      - name: OSV check (table)
         continue-on-error: true
-        run: |
-          ./osv-scanner --sbom bom.json --skip-git > ./osv.txt
+        run: ./osv-scanner --sbom bom.json --skip-git > ./osv.txt
+
+      - name: OSV check (json)
+        continue-on-error: true
+        run: ./osv-scanner --sbom bom.json --format json --skip-git > ./osv.json
 
       - name: Commit and push SBOMs and OSVs
         run: |
@@ -48,6 +51,7 @@ jobs:
           git add ./bom.json
           git add ./bom.xml
           git add ./osv.txt
+          git add ./osv.json
           git commit -m "Updated SBOM and OSV"
           git push
 
