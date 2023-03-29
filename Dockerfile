@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM eclipse-temurin:11
 MAINTAINER mgfeller@mgfeller.net
 VOLUME /tmp
 ARG JAR_FILE
