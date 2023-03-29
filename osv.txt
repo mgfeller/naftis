@@ -50,7 +50,6 @@ Scanned /home/runner/work/naftis/naftis/bom.json as CycloneDX SBOM and found 80 
 | https://osv.dev/GHSA-h4rc-386g-6m85 | Maven     | jackson-databind        | 2.9.6         | bom.json |
 | https://osv.dev/GHSA-h822-r4r5-v8jg | Maven     | jackson-databind        | 2.9.6         | bom.json |
 | https://osv.dev/GHSA-j823-4qch-3rgm | Maven     | jackson-databind        | 2.9.6         | bom.json |
-| https://osv.dev/GHSA-jjjh-jjxp-wpff | Maven     | jackson-databind        | 2.9.6         | bom.json |
 | https://osv.dev/GHSA-m6x4-97wx-4q27 | Maven     | jackson-databind        | 2.9.6         | bom.json |
 | https://osv.dev/GHSA-mc6h-4qgp-37qh | Maven     | jackson-databind        | 2.9.6         | bom.json |
 | https://osv.dev/GHSA-mph4-vhrx-mv67 | Maven     | jackson-databind        | 2.9.6         | bom.json |
