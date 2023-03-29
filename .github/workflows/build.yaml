@@ -39,9 +39,8 @@ jobs:
       - name: OSV check
         continue-on-error: true
         run: |
-          ./osv-scanner --sbom bom.json --skip-git > osv.txt
-          ./osv-scanner --sbom bom.json --skip-git --format json > osv.json
-          cat osv.txt
+          ./osv-scanner --sbom bom.json --skip-git > ./osv.txt
+          ./osv-scanner --sbom bom.json --skip-git --format json > ./osv.json
 
       - name: Commit and push SBOMs and OSVs
         run: |
