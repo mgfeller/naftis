@@ -36,11 +36,13 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-      - name: OSV check (table)
+      - id: osv-scan-app-table
+        name: OSV check (table)
         continue-on-error: true
         run: ./osv-scanner --sbom bom.json --skip-git > ./osv.txt
 
-      - name: OSV check (json)
+      - id: osv-scan-app-json
+        name: OSV check (json)
         continue-on-error: true
         run: ./osv-scanner --sbom bom.json --format json --skip-git > ./osv.json
 
@@ -77,6 +79,26 @@ jobs:
             migfe/naftis:0.0.1
           build-args: JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar
 
+      - id: osv-scan-docker-table
+        name: OSV check docker image (table)
+        continue-on-error: true
+        run: ./osv-scanner --docker migfe/naftis:latest --skip-git > ./osv-docker-image.txt
+
+      - id: osv-scan-docker-json
+        name: OSV check docker image (json)
+        continue-on-error: true
+        run: ./osv-scanner --docker migfe/naftis:latest --format json --skip-git > ./osv-docker-image.json
+
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
       - name: Update dependency graph
         uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
+
+      - id: osv-scanner-status-docker-image
+        name: Checking exit status of OSV scan of docker image - fails if vulnerabilities are found
+        if: steps.osv-scan-docker-table.outcome != 'success' || steps.osv-scan-docker-json.outcome != 'success'
+        run: exit 1
+
+      - id: osv-scanner-status-app
+        name: Checking exit status of OSV scan of application - fails if vulnerabilities are found
+        if: steps.osv-scan-app-table.outcome != 'success' || steps.osv-scan-app-json.outcome != 'success'
+        run: exit 1
