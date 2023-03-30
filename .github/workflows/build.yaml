@@ -57,7 +57,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          
+
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
@@ -68,8 +68,11 @@ jobs:
             migfe/naftis:latest
             migfe/naftis:0.0.1
           build-args: JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar
-          provenance: true
-          sbom: true
+          provenance: mode=min
+          # inspect provenance using:
+          # docker buildx imagetools inspect migfe/naftis:latest  --format "{{ json .Provenance.SLSA }}"
+          # doesn't seem to work yet, warnings in build. uses also syft.
+          # sbom: true
 
       - id: osv-scan-docker-table
         name: OSV check docker image (table)
