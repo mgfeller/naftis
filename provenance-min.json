@@ -1,0 +1,50 @@
+{
+  "buildType": "https://mobyproject.org/buildkit@v1",
+  "builder": {
+    "id": "https://github.com/mgfeller/naftis/actions/runs/4564908261"
+  },
+  "invocation": {
+    "configSource": {
+      "entryPoint": "Dockerfile"
+    },
+    "environment": {
+      "platform": "linux/amd64"
+    },
+    "parameters": {
+      "frontend": "dockerfile.v0",
+      "locals": [
+        {
+          "name": "context"
+        },
+        {
+          "name": "dockerfile"
+        }
+      ]
+    }
+  },
+  "materials": [
+    {
+      "digest": {
+        "sha256": "95de37f7ca1c657950169e3742897929702d565066299fa48ddb622ee6efeff7"
+      },
+      "uri": "pkg:docker/eclipse-temurin@11?platform=linux%2Famd64"
+    }
+  ],
+  "metadata": {
+    "buildFinishedOn": "2023-03-30T13:24:52.633534472Z",
+    "buildInvocationID": "cpxtwmsfwo5qsxnmju361jgky",
+    "buildStartedOn": "2023-03-30T13:24:41.96259942Z",
+    "completeness": {
+      "environment": true,
+      "materials": false,
+      "parameters": false
+    },
+    "https://mobyproject.org/buildkit@v1#metadata": {
+      "vcs": {
+        "revision": "2e9f54042805a3c6807f544fea7fccb216b8a924",
+        "source": "https://github.com/mgfeller/naftis"
+      }
+    },
+    "reproducible": false
+  }
+}
