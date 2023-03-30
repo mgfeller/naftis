@@ -80,11 +80,12 @@ jobs:
 
       # create SBOM using anchore/Syft (corresponds to docker sbom)
       - id: docker-sbom
-        name: Docker image SBOM using docker sbom
+        name: Docker image SBOM using anchore/Syft
         uses: anchore/sbom-action@v0
-        image: migfe/naftis:latest
-        format: cyclonedx-json
-        output-file: ./docker-sbom/bom.json
+        with:
+          image: migfe/naftis:latest
+          format: cyclonedx-json
+          output-file: ./docker-sbom/bom.json
 
       # analyse sbom generated using anchore/Syft
       - id: osv-scan-docker-sbom-table
