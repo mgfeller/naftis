@@ -46,17 +46,6 @@ jobs:
         continue-on-error: true
         run: ./osv-scanner --sbom bom.json --format json --skip-git > ./osv.json
 
-      - name: Commit and push SBOMs and OSVs
-        run: |
-          git config --global user.name 'Michael Gfeller'
-          git config --global user.email '1214008+mgfeller@users.noreply.github.com'
-          git add ./bom.json
-          git add ./bom.xml
-          git add ./osv.txt
-          git add ./osv.json
-          git commit -m "Updated SBOM and OSV"
-          git push
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
@@ -89,9 +78,40 @@ jobs:
         continue-on-error: true
         run: ./osv-scanner --docker migfe/naftis:latest --format json --skip-git > ./osv-docker-image.json
 
+      # create SBOM using docker sbom, which in turn is using Syft.
+      - id: docker-sbom
+        name: Docker image SBOM using docker sbom
+        run: docker sbom --format cyclonedx-json --output ./docker-sbom/bom.json migfe/naftis:latest
+
+      # analyse sbom generated using docker sbom
+      - id: osv-scan-docker-sbom-table
+        name: OSV check SBOM generated using docker sbom (table)
+        continue-on-error: true
+        run: ./osv-scanner --sbom ./docker-sbom/bom.json --skip-git > ./docker-sbom/osv.txt
+
+      # analyse sbom generated using docker sbom
+      - id: osv-scan-docker-sbom-json
+        name: OSV check SBOM generated using docker sbom  (json)
+        continue-on-error: true
+        run: ./osv-scanner --sbom ./docker-sbom/bom.json --format json --skip-git > ./docker-sbom/osv.json
+
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
       - name: Update dependency graph
         uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
+
+      - name: Commit and push SBOMs and OSVs
+        run: |
+          git config --global user.name 'Michael Gfeller'
+          git config --global user.email '1214008+mgfeller@users.noreply.github.com'
+          git add ./bom.json
+          git add ./bom.xml
+          git add ./osv.txt
+          git add ./osv.json
+          git add ./docker-sbom/bom.json
+          git add ./docker-sbom/osv.txt
+          git add ./docker-sbom/osv.json
+          git commit -m "Updated SBOM and OSV"
+          git push
 
       - id: osv-scanner-status-docker-image
         name: Checking exit status of OSV scan of docker image - fails if vulnerabilities are found
@@ -101,4 +121,9 @@ jobs:
       - id: osv-scanner-status-app
         name: Checking exit status of OSV scan of application - fails if vulnerabilities are found
         if: steps.osv-scan-app-table.outcome != 'success' || steps.osv-scan-app-json.outcome != 'success'
+        run: exit 1
+
+      - id: osv-scanner-status-docker-sbom
+        name: Checking exit status of OSV scan of application - fails if vulnerabilities are found
+        if: steps.osv-scan-docker-sbom-table.outcome != 'success' || steps.osv-scan-docker-sbom-json.outcome != 'success'
         run: exit 1
