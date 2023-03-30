@@ -2,7 +2,7 @@
   "results": [
     {
       "source": {
-        "path": "/home/michael/dev/mgfeller/naftis/docker-sbom/bom.json",
+        "path": "/home/runner/work/naftis/naftis/docker-sbom/bom.json",
         "type": "sbom"
       },
       "packages": [

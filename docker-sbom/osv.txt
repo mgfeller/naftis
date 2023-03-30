@@ -1,4 +1,4 @@
-Scanned /home/michael/dev/mgfeller/naftis/docker-sbom/bom.json as CycloneDX SBOM and found 206 packages
+Scanned /home/runner/work/naftis/naftis/docker-sbom/bom.json as CycloneDX SBOM and found 207 packages
 +-------------------------------------+-----------+-------------------------+--------------+----------------------+
 | OSV URL (ID IN BOLD)                | ECOSYSTEM | PACKAGE                 | VERSION      | SOURCE               |
 +-------------------------------------+-----------+-------------------------+--------------+----------------------+
