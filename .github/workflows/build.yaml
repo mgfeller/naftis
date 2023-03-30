@@ -78,18 +78,21 @@ jobs:
         continue-on-error: true
         run: ./osv-scanner --docker migfe/naftis:latest --format json --skip-git > ./osv-docker-image.json
 
-      # create SBOM using docker sbom, which in turn is using Syft.
+      # create SBOM using anchore/Syft (corresponds to docker sbom)
       - id: docker-sbom
         name: Docker image SBOM using docker sbom
-        run: docker sbom --format cyclonedx-json --output ./docker-sbom/bom.json migfe/naftis:latest
+        uses: anchore/sbom-action@v0
+        image: migfe/naftis:latest
+        format: cyclonedx-json
+        output-file: ./docker-sbom/bom.json
 
-      # analyse sbom generated using docker sbom
+      # analyse sbom generated using anchore/Syft
       - id: osv-scan-docker-sbom-table
         name: OSV check SBOM generated using docker sbom (table)
         continue-on-error: true
         run: ./osv-scanner --sbom ./docker-sbom/bom.json --skip-git > ./docker-sbom/osv.txt
 
-      # analyse sbom generated using docker sbom
+      # analyse sbom generated using anchore/Syft
       - id: osv-scan-docker-sbom-json
         name: OSV check SBOM generated using docker sbom  (json)
         continue-on-error: true
