@@ -1,0 +1,16 @@
+#!/bin/bash
+
+IMAGE=migfe/naftis:latest
+IMAGE_DIGEST="${IMAGE}@"$(crane digest "${IMAGE}")
+echo IMAGE_DIGEST: $IMAGE_DIGEST
+echo --------------------------------------------
+echo cosign tree:
+cosign tree $IMAGE_DIGEST
+echo --------------------------------------------
+echo cosign download attestation
+cosign download attestation $IMAGE_DIGEST | jq -r '.payload' | base64 -d | jq | tee slsa3-inspect-attestation.json
+echo --------------------------------------------
+echo slsa-verifier verify-image
+slsa-verifier verify-image $IMAGE_DIGEST \
+  --source-uri github.com/mgfeller/naftis \
+  --builder-id https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v1.5.0
