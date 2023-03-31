@@ -24,6 +24,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Show variables
+        run: |
+          echo "FAIL_ON_VULNERABILITIES : ${{ vars.FAIL_ON_VULNERABILITIES }}"
+
       - uses: actions/checkout@v3
 
       - name: Set up JDK 11
@@ -125,7 +129,7 @@ jobs:
 
       - id: osv-scanner-status-docker-image
         name: Checking exit status of OSV scan of docker image - fails if vulnerabilities are found
-        if: ${{ vars.FAIL_ON_VULNERABILITIES == 'true' }} && (steps.osv-scan-docker-table.outcome != 'success' || steps.osv-scan-docker-json.outcome != 'success')
+        if: ${{ vars.FAIL_ON_VULNERABILITIES == 'true' && (steps.osv-scan-docker-table.outcome != 'success' || steps.osv-scan-docker-json.outcome != 'success') }}
         run: exit 1
 
       - id: osv-scanner-status-app
@@ -134,6 +138,6 @@ jobs:
         run: exit 1
 
       - id: osv-scanner-status-docker-sbom
-        name: Checking exit status of OSV scan of application - fails if vulnerabilities are found
+        name: Checking exit status of OSV scan of docker sbom (anchore/syft) - fails if vulnerabilities are found
         if: ${{ vars.FAIL_ON_VULNERABILITIES == 'false' }} && (steps.osv-scan-docker-sbom-table.outcome != 'success' || steps.osv-scan-docker-sbom-json.outcome != 'success')
         run: exit 1
