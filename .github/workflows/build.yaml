@@ -18,7 +18,7 @@ on:
       - master
       - main
 env:
-  IMAGE_NAME: migfe/naftis
+  IMAGE_NAME: 'migfe/naftis'
 
 jobs:
   build:
