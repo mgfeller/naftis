@@ -17,6 +17,8 @@ on:
     branches:
       - master
       - main
+env:
+  IMAGE_NAME: migfe/naftis
 
 jobs:
   build:
@@ -85,7 +87,8 @@ jobs:
       - name: Output image
         id: image
         run: |
-          echo "image=migfe/naftis" >> "$GITHUB_OUTPUT"
+          image_name="${IMAGE_NAME}"
+          echo "image=$image_name" >> "$GITHUB_OUTPUT"
         # NOTE: Set the image as an output because the `env` context is not
         # available to the inputs of a reusable workflow call.
 
