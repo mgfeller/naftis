@@ -168,7 +168,7 @@ jobs:
     #  if: startsWith(github.ref, 'refs/tags/')
     uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v1.5.0
     with:
-      image: ${{ needs.build.outputs.image }}
+      image: migfe/naftis
       digest: ${{ needs.build.outputs.digest }}
       registry-username: migfe
     secrets:
