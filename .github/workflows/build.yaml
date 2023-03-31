@@ -139,5 +139,5 @@ jobs:
 
       - id: osv-scanner-status-docker-sbom
         name: Checking exit status of OSV scan of docker sbom (anchore/syft) - fails if vulnerabilities are found
-        if: ${{ vars.FAIL_ON_VULNERABILITIES == 'false' && (steps.osv-scan-docker-sbom-table.outcome != 'success' || steps.osv-scan-docker-sbom-json.outcome != 'success') }}
+        if: ${{ vars.FAIL_ON_VULNERABILITIES == 'true' && (steps.osv-scan-docker-sbom-table.outcome != 'success' || steps.osv-scan-docker-sbom-json.outcome != 'success') }}
         run: exit 1
