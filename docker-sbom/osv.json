@@ -16,7 +16,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-gwrp-pvrq-jmwv",
-              "modified": "2023-03-28T05:32:26.785293Z",
+              "modified": "2023-04-11T01:32:00.02966Z",
               "published": "2021-04-26T16:04:00Z",
               "aliases": [
                 "CVE-2021-29425"
@@ -296,7 +296,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-m8p2-495h-ccmh",
-              "modified": "2023-03-28T05:39:08.506657Z",
+              "modified": "2023-04-11T01:42:02.923652Z",
               "published": "2020-01-08T17:01:52Z",
               "aliases": [
                 "CVE-2019-10219"
@@ -448,7 +448,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-rmrm-75hp-phr2",
-              "modified": "2023-03-28T05:37:05.253754Z",
+              "modified": "2023-04-11T01:39:43.279201Z",
               "published": "2021-06-04T21:36:34Z",
               "aliases": [
                 "CVE-2020-10693"
@@ -611,7 +611,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-7r82-7xv7-xcpj",
-              "modified": "2023-03-28T05:47:01.713432Z",
+              "modified": "2023-04-11T01:34:45.119514Z",
               "published": "2021-06-03T23:40:23Z",
               "aliases": [
                 "CVE-2020-13956"
@@ -1018,7 +1018,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-27xj-rqx5-2255",
-              "modified": "2023-03-28T05:29:00.525132Z",
+              "modified": "2023-04-11T01:28:10.480698Z",
               "published": "2020-05-15T18:58:44Z",
               "aliases": [
                 "CVE-2020-11619"
@@ -1135,7 +1135,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-288c-cq4h-88gq",
-              "modified": "2023-03-28T05:34:29.623435Z",
+              "modified": "2023-04-11T01:40:26.64652Z",
               "published": "2021-02-18T20:51:54Z",
               "aliases": [
                 "CVE-2020-25649"
@@ -1672,7 +1672,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-4gq5-ch57-c2mg",
-              "modified": "2023-03-28T05:41:29.540396Z",
+              "modified": "2023-04-11T01:41:47.689321Z",
               "published": "2019-01-04T19:09:49Z",
               "aliases": [
                 "CVE-2018-14719"
@@ -2019,7 +2019,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-4w82-r329-3q67",
-              "modified": "2023-03-28T05:39:39.056855Z",
+              "modified": "2023-04-11T01:38:23.605903Z",
               "published": "2020-03-04T20:52:14Z",
               "aliases": [
                 "CVE-2020-8840"
@@ -2465,7 +2465,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-57j2-w4cx-62h2",
-              "modified": "2023-03-28T05:39:54.246288Z",
+              "modified": "2023-04-11T01:29:39.648646Z",
               "published": "2022-03-12T00:00:36Z",
               "aliases": [
                 "CVE-2020-36518"
@@ -2758,7 +2758,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-58pp-9c76-5625",
-              "modified": "2023-03-28T05:50:29.379882Z",
+              "modified": "2023-04-11T01:32:35.722626Z",
               "published": "2020-06-10T21:12:41Z",
               "aliases": [
                 "CVE-2020-11112"
@@ -2875,7 +2875,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-5949-rw7g-wx7w",
-              "modified": "2023-03-28T05:29:50.826601Z",
+              "modified": "2023-04-11T01:34:07.10219Z",
               "published": "2021-01-20T21:20:15Z",
               "aliases": [
                 "CVE-2021-20190"
@@ -3100,7 +3100,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-5p34-5m6p-p58g",
-              "modified": "2023-03-28T05:36:26.479161Z",
+              "modified": "2023-04-11T01:46:58.754739Z",
               "published": "2020-04-23T21:08:40Z",
               "aliases": [
                 "CVE-2020-9546"
@@ -3253,7 +3253,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-5ww9-j83m-q7qx",
-              "modified": "2023-03-28T05:42:46.899918Z",
+              "modified": "2023-04-11T01:40:59.913119Z",
               "published": "2019-05-23T09:32:24Z",
               "aliases": [
                 "CVE-2019-12086"
@@ -3595,7 +3595,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-645p-88qh-w398",
-              "modified": "2023-03-28T05:16:22.434919Z",
+              "modified": "2023-04-11T01:20:39.64371Z",
               "published": "2019-01-04T19:06:55Z",
               "aliases": [
                 "CVE-2018-14718"
@@ -3958,7 +3958,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-6fpp-rgj9-8rwc",
-              "modified": "2023-03-28T05:42:53.60711Z",
+              "modified": "2023-04-11T01:30:28.498197Z",
               "published": "2019-08-01T19:18:00Z",
               "aliases": [
                 "CVE-2019-14379"
@@ -4379,7 +4379,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-758m-v56v-grj4",
-              "modified": "2023-03-28T05:32:46.060824Z",
+              "modified": "2023-04-11T01:42:06.897005Z",
               "published": "2020-04-23T21:36:03Z",
               "aliases": [
                 "CVE-2020-10969"
@@ -4496,7 +4496,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-85cw-hj65-qqv9",
-              "modified": "2023-03-28T05:38:26.029294Z",
+              "modified": "2023-04-11T01:49:42.641681Z",
               "published": "2019-09-23T18:33:45Z",
               "aliases": [
                 "CVE-2019-16335"
@@ -4809,7 +4809,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-89qr-369f-5m5x",
-              "modified": "2023-03-28T05:46:11.778997Z",
+              "modified": "2023-04-11T01:28:19.110416Z",
               "published": "2021-12-09T19:15:46Z",
               "aliases": [
                 "CVE-2020-36182"
@@ -5044,7 +5044,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-8c4j-34r4-xr8g",
-              "modified": "2023-03-28T05:41:04.512012Z",
+              "modified": "2023-04-11T01:49:42.609235Z",
               "published": "2021-12-09T19:16:18Z",
               "aliases": [
                 "CVE-2020-36180"
@@ -5279,7 +5279,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-8w26-6f25-cm9x",
-              "modified": "2023-03-28T05:47:50.656465Z",
+              "modified": "2023-04-11T01:49:50.946832Z",
               "published": "2021-12-09T19:16:02Z",
               "aliases": [
                 "CVE-2020-36185"
@@ -5514,7 +5514,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-95cm-88f5-f2c7",
-              "modified": "2023-03-28T05:25:00.977891Z",
+              "modified": "2023-04-11T01:40:34.943919Z",
               "published": "2020-04-23T16:32:59Z",
               "aliases": [
                 "CVE-2020-10672"
@@ -5629,7 +5629,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-9gph-22xh-8x98",
-              "modified": "2023-03-28T05:47:32.490733Z",
+              "modified": "2023-04-11T01:50:04.45542Z",
               "published": "2021-12-09T19:15:54Z",
               "aliases": [
                 "CVE-2020-36179"
@@ -5868,7 +5868,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-9m6f-7xcq-8vf8",
-              "modified": "2023-03-28T05:38:16.741531Z",
+              "modified": "2023-04-11T01:41:46.044573Z",
               "published": "2021-12-09T19:16:34Z",
               "aliases": [
                 "CVE-2020-36183"
@@ -6103,7 +6103,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-9mxf-g3x6-wv74",
-              "modified": "2023-03-28T05:50:09.154248Z",
+              "modified": "2023-04-11T01:34:36.638718Z",
               "published": "2019-01-04T19:07:06Z",
               "aliases": [
                 "CVE-2018-14721"
@@ -6375,7 +6375,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-9vvp-fxw6-jcxr",
-              "modified": "2023-03-28T05:42:37.864737Z",
+              "modified": "2023-04-11T01:30:02.981932Z",
               "published": "2020-05-15T18:58:47Z",
               "aliases": [
                 "CVE-2020-11113"
@@ -6492,7 +6492,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-c265-37vj-cwcc",
-              "modified": "2023-03-28T05:47:03.320559Z",
+              "modified": "2023-04-11T01:39:46.850986Z",
               "published": "2020-06-18T14:44:48Z",
               "aliases": [
                 "CVE-2020-14062"
@@ -6622,7 +6622,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-c2q3-4qrh-fm48",
-              "modified": "2023-03-28T05:50:24.588587Z",
+              "modified": "2023-04-11T01:20:20.813168Z",
               "published": "2020-06-18T14:44:50Z",
               "aliases": [
                 "CVE-2020-14061"
@@ -6752,7 +6752,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-c8hm-7hpq-7jhg",
-              "modified": "2023-03-28T05:36:28.551765Z",
+              "modified": "2023-04-11T01:46:24.442688Z",
               "published": "2019-01-04T19:07:03Z",
               "aliases": [
                 "CVE-2018-19362"
@@ -7061,7 +7061,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-cf6r-3wgc-h863",
-              "modified": "2023-03-28T05:49:13.374374Z",
+              "modified": "2023-04-11T01:32:40.375716Z",
               "published": "2020-05-15T18:58:58Z",
               "aliases": [
                 "CVE-2019-14892"
@@ -7306,7 +7306,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-cmfg-87vq-g5g4",
-              "modified": "2023-03-28T05:23:43.46997Z",
+              "modified": "2023-04-11T01:40:22.266757Z",
               "published": "2019-07-17T15:26:12Z",
               "aliases": [
                 "CVE-2019-12814"
@@ -7706,7 +7706,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-cvm9-fjm9-3572",
-              "modified": "2023-03-28T05:32:57.606585Z",
+              "modified": "2023-04-11T01:39:44.295133Z",
               "published": "2021-12-09T19:16:10Z",
               "aliases": [
                 "CVE-2020-36181"
@@ -7941,7 +7941,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-f3j5-rmmp-3fc5",
-              "modified": "2023-03-28T05:28:11.580847Z",
+              "modified": "2023-04-11T01:38:32.967541Z",
               "published": "2020-06-15T18:44:48Z",
               "aliases": [
                 "CVE-2019-17267"
@@ -8210,7 +8210,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-f9hv-mg5h-xcw9",
-              "modified": "2023-03-28T05:41:10.169847Z",
+              "modified": "2023-04-11T01:44:00.499162Z",
               "published": "2019-01-04T19:06:57Z",
               "aliases": [
                 "CVE-2018-19360"
@@ -8515,7 +8515,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-f9xh-2qgp-cq57",
-              "modified": "2023-03-28T05:35:02.969372Z",
+              "modified": "2023-04-11T01:37:47.47943Z",
               "published": "2021-12-09T19:16:42Z",
               "aliases": [
                 "CVE-2020-36188"
@@ -8750,7 +8750,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-fmmc-742q-jg75",
-              "modified": "2023-03-28T05:42:48.480595Z",
+              "modified": "2023-04-11T01:47:50.964718Z",
               "published": "2019-11-13T00:32:27Z",
               "aliases": [
                 "CVE-2019-16943"
@@ -9045,7 +9045,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-fqwf-pjwf-7vqv",
-              "modified": "2023-03-28T05:25:36.17348Z",
+              "modified": "2023-04-11T01:36:04.494584Z",
               "published": "2020-05-15T18:59:04Z",
               "aliases": [
                 "CVE-2020-10673"
@@ -9260,7 +9260,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-gjmw-vf9h-g25v",
-              "modified": "2023-03-28T05:44:18.715197Z",
+              "modified": "2023-04-11T01:49:10.720285Z",
               "published": "2019-11-13T00:32:38Z",
               "aliases": [
                 "CVE-2019-17531"
@@ -9527,7 +9527,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-gwp4-hfv6-p7hw",
-              "modified": "2023-03-28T05:37:42.576371Z",
+              "modified": "2023-04-11T01:43:59.469775Z",
               "published": "2019-08-01T19:18:06Z",
               "aliases": [
                 "CVE-2019-14439"
@@ -9827,7 +9827,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-gww7-p5w4-wrfv",
-              "modified": "2023-03-28T05:19:35.034055Z",
+              "modified": "2023-04-11T01:43:32.535755Z",
               "published": "2020-03-04T20:52:11Z",
               "aliases": [
                 "CVE-2019-20330"
@@ -10216,7 +10216,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-h3cw-g4mq-c5x2",
-              "modified": "2023-03-28T05:46:40.490834Z",
+              "modified": "2023-04-11T01:43:38.117198Z",
               "published": "2021-12-09T19:14:51Z",
               "aliases": [
                 "CVE-2020-24616"
@@ -10450,7 +10450,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-h4rc-386g-6m85",
-              "modified": "2023-03-28T05:42:13.155122Z",
+              "modified": "2023-04-11T01:38:44.303009Z",
               "published": "2020-04-23T20:19:02Z",
               "aliases": [
                 "CVE-2020-11620"
@@ -10563,7 +10563,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-h822-r4r5-v8jg",
-              "modified": "2023-03-28T05:46:29.881584Z",
+              "modified": "2023-04-11T01:46:10.090888Z",
               "published": "2019-09-23T18:33:25Z",
               "aliases": [
                 "CVE-2019-14540"
@@ -10888,7 +10888,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-j823-4qch-3rgm",
-              "modified": "2023-03-28T05:36:48.4046Z",
+              "modified": "2023-04-11T01:48:54.054974Z",
               "published": "2020-06-18T14:44:46Z",
               "aliases": [
                 "CVE-2020-14060"
@@ -11017,8 +11017,299 @@
             },
             {
               "schema_version": "1.4.0",
+              "id": "GHSA-jjjh-jjxp-wpff",
+              "modified": "2023-04-11T01:35:18.327239Z",
+              "published": "2022-10-03T00:00:31Z",
+              "aliases": [
+                "CVE-2022-42003"
+              ],
+              "summary": "Uncontrolled Resource Consumption in Jackson-databind",
+              "details": "In FasterXML jackson-databind 2.4.0-rc1 until 2.12.7.1 and in 2.13.x before 2.13.4.2 resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled. This was patched in 2.12.7.1, 2.13.4.2, and 2.14.0.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "com.fasterxml.jackson.core:jackson-databind",
+                    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "2.4.0-rc1"
+                        },
+                        {
+                          "fixed": "2.12.7.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.10.0",
+                    "2.10.0.pr1",
+                    "2.10.0.pr2",
+                    "2.10.0.pr3",
+                    "2.10.1",
+                    "2.10.2",
+                    "2.10.3",
+                    "2.10.4",
+                    "2.10.5",
+                    "2.10.5.1",
+                    "2.11.0",
+                    "2.11.0.rc1",
+                    "2.11.1",
+                    "2.11.2",
+                    "2.11.3",
+                    "2.11.4",
+                    "2.12.0",
+                    "2.12.0-rc1",
+                    "2.12.0-rc2",
+                    "2.12.1",
+                    "2.12.2",
+                    "2.12.3",
+                    "2.12.4",
+                    "2.12.5",
+                    "2.12.6",
+                    "2.12.6.1",
+                    "2.12.7",
+                    "2.4.0",
+                    "2.4.0-rc1",
+                    "2.4.0-rc2",
+                    "2.4.0-rc3",
+                    "2.4.1",
+                    "2.4.1.1",
+                    "2.4.1.2",
+                    "2.4.1.3",
+                    "2.4.2",
+                    "2.4.3",
+                    "2.4.4",
+                    "2.4.5",
+                    "2.4.5.1",
+                    "2.4.6",
+                    "2.4.6.1",
+                    "2.5.0",
+                    "2.5.0-rc1",
+                    "2.5.1",
+                    "2.5.2",
+                    "2.5.3",
+                    "2.5.4",
+                    "2.5.5",
+                    "2.6.0",
+                    "2.6.0-rc1",
+                    "2.6.0-rc2",
+                    "2.6.0-rc3",
+                    "2.6.0-rc4",
+                    "2.6.1",
+                    "2.6.2",
+                    "2.6.3",
+                    "2.6.4",
+                    "2.6.5",
+                    "2.6.6",
+                    "2.6.7",
+                    "2.6.7.1",
+                    "2.6.7.2",
+                    "2.6.7.3",
+                    "2.6.7.4",
+                    "2.6.7.5",
+                    "2.7.0",
+                    "2.7.0-rc1",
+                    "2.7.0-rc2",
+                    "2.7.0-rc3",
+                    "2.7.1",
+                    "2.7.1-1",
+                    "2.7.2",
+                    "2.7.3",
+                    "2.7.4",
+                    "2.7.5",
+                    "2.7.6",
+                    "2.7.7",
+                    "2.7.8",
+                    "2.7.9",
+                    "2.7.9.1",
+                    "2.7.9.2",
+                    "2.7.9.3",
+                    "2.7.9.4",
+                    "2.7.9.5",
+                    "2.7.9.6",
+                    "2.7.9.7",
+                    "2.8.0",
+                    "2.8.0.rc1",
+                    "2.8.0.rc2",
+                    "2.8.1",
+                    "2.8.10",
+                    "2.8.11",
+                    "2.8.11.1",
+                    "2.8.11.2",
+                    "2.8.11.3",
+                    "2.8.11.4",
+                    "2.8.11.5",
+                    "2.8.11.6",
+                    "2.8.2",
+                    "2.8.3",
+                    "2.8.4",
+                    "2.8.5",
+                    "2.8.6",
+                    "2.8.7",
+                    "2.8.8",
+                    "2.8.8.1",
+                    "2.8.9",
+                    "2.9.0",
+                    "2.9.0.pr1",
+                    "2.9.0.pr2",
+                    "2.9.0.pr3",
+                    "2.9.0.pr4",
+                    "2.9.1",
+                    "2.9.10",
+                    "2.9.10.1",
+                    "2.9.10.2",
+                    "2.9.10.3",
+                    "2.9.10.4",
+                    "2.9.10.5",
+                    "2.9.10.6",
+                    "2.9.10.7",
+                    "2.9.10.8",
+                    "2.9.2",
+                    "2.9.3",
+                    "2.9.4",
+                    "2.9.5",
+                    "2.9.6",
+                    "2.9.7",
+                    "2.9.8",
+                    "2.9.9",
+                    "2.9.9.1",
+                    "2.9.9.2",
+                    "2.9.9.3"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/10/GHSA-jjjh-jjxp-wpff/GHSA-jjjh-jjxp-wpff.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "Maven",
+                    "name": "com.fasterxml.jackson.core:jackson-databind",
+                    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind"
+                  },
+                  "ranges": [
+                    {
+                      "type": "ECOSYSTEM",
+                      "events": [
+                        {
+                          "introduced": "2.13.0"
+                        },
+                        {
+                          "fixed": "2.13.4.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "versions": [
+                    "2.13.0",
+                    "2.13.1",
+                    "2.13.2",
+                    "2.13.2.1",
+                    "2.13.2.2",
+                    "2.13.3",
+                    "2.13.4",
+                    "2.13.4.1"
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/10/GHSA-jjjh-jjxp-wpff/GHSA-jjjh-jjxp-wpff.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42003"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/issues/3590"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/issues/3627"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/commit/0e37a39502439ecbaa1a5b5188387c01bf7f7fa1"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/commit/7ba9ac5b87a9d6ac0d2815158ecbeb315ad4dcdc"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/commit/cd090979b7ea78c75e4de8a4aed04f7e9fa8deea"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/commit/d499f2e7bbc5ebd63af11e1f5cf1989fa323aa45"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/commit/d78d00ee7b5245b93103fef3187f70543d67ca33"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51020"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/FasterXML/jackson-databind"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/blob/2.13/release-notes/VERSION-2.x"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/commits/jackson-databind-2.4.0-rc1?after=75b97b8519f0d50c62523ad85170d80a197a2c86+174\u0026branch=jackson-databind-2.4.0-rc1\u0026qualified_name=refs%2Ftags%2Fjackson-databind-2.4.0-rc1"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/FasterXML/jackson-databind/compare/jackson-databind-2.13.4.1...jackson-databind-2.13.4.2"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2022/11/msg00035.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.gentoo.org/glsa/202210-21"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20221124-0004/"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.debian.org/security/2022/dsa-5283"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400",
+                  "CWE-502"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2022-10-04T21:55:46Z",
+                "nvd_published_at": "2022-10-02T05:15:00Z",
+                "severity": "HIGH"
+              }
+            },
+            {
+              "schema_version": "1.4.0",
               "id": "GHSA-m6x4-97wx-4q27",
-              "modified": "2023-03-28T05:31:44.045261Z",
+              "modified": "2023-04-11T01:40:54.221954Z",
               "published": "2021-12-09T19:16:26Z",
               "aliases": [
                 "CVE-2020-36184"
@@ -11253,7 +11544,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-mc6h-4qgp-37qh",
-              "modified": "2023-03-28T05:28:08.051385Z",
+              "modified": "2023-04-11T01:18:58.192892Z",
               "published": "2020-06-18T14:44:43Z",
               "aliases": [
                 "CVE-2020-14195"
@@ -11375,7 +11666,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-mph4-vhrx-mv67",
-              "modified": "2023-03-28T05:36:01.358022Z",
+              "modified": "2023-04-11T01:40:48.171622Z",
               "published": "2019-07-05T21:07:27Z",
               "aliases": [
                 "CVE-2019-12384"
@@ -11738,7 +12029,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-mx7p-6679-8g3q",
-              "modified": "2023-03-28T05:40:39.432667Z",
+              "modified": "2023-04-11T01:31:16.476507Z",
               "published": "2019-10-28T20:51:15Z",
               "aliases": [
                 "CVE-2019-16942"
@@ -12042,7 +12333,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-mx9v-gmh4-mgqw",
-              "modified": "2023-03-28T05:33:24.472521Z",
+              "modified": "2023-04-11T01:40:52.459972Z",
               "published": "2019-01-04T19:07:01Z",
               "aliases": [
                 "CVE-2018-19361"
@@ -12347,7 +12638,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-p43x-xfjf-5jhr",
-              "modified": "2023-03-28T05:35:21.230176Z",
+              "modified": "2023-04-11T01:35:40.936557Z",
               "published": "2020-05-15T18:59:01Z",
               "aliases": [
                 "CVE-2020-9548"
@@ -12602,7 +12893,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-q93h-jc49-78gg",
-              "modified": "2023-03-28T05:30:49.518712Z",
+              "modified": "2023-04-11T01:40:30.704131Z",
               "published": "2020-05-15T18:59:10Z",
               "aliases": [
                 "CVE-2020-9547"
@@ -12885,7 +13176,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-qjw2-hr98-qgfh",
-              "modified": "2023-03-28T05:47:10.955591Z",
+              "modified": "2023-04-11T01:28:20.408427Z",
               "published": "2021-12-09T19:15:36Z",
               "aliases": [
                 "CVE-2020-24750"
@@ -13144,7 +13435,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-qmqc-x3r4-6v39",
-              "modified": "2023-03-28T05:46:23.838435Z",
+              "modified": "2023-04-11T01:34:51.343033Z",
               "published": "2020-05-15T18:59:07Z",
               "aliases": [
                 "CVE-2019-14893"
@@ -13250,7 +13541,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-r3gr-cxrf-hg25",
-              "modified": "2023-03-28T05:37:51.840181Z",
+              "modified": "2023-04-11T01:35:25.057487Z",
               "published": "2021-12-09T19:15:11Z",
               "aliases": [
                 "CVE-2020-35491"
@@ -13486,7 +13777,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-r695-7vr9-jgc2",
-              "modified": "2023-03-28T05:26:09.395923Z",
+              "modified": "2023-04-11T01:42:29.303731Z",
               "published": "2021-12-09T19:16:51Z",
               "aliases": [
                 "CVE-2020-36187"
@@ -13721,7 +14012,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-rf6r-2c4q-2vwg",
-              "modified": "2023-03-28T05:45:42.857679Z",
+              "modified": "2023-04-11T01:24:14.873631Z",
               "published": "2020-05-15T18:58:54Z",
               "aliases": [
                 "CVE-2020-10968"
@@ -13838,7 +14129,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-rgv9-q543-rqg4",
-              "modified": "2023-03-28T05:34:00.698613Z",
+              "modified": "2023-04-11T01:38:44.585378Z",
               "published": "2022-10-03T00:00:31Z",
               "aliases": [
                 "CVE-2022-42004"
@@ -14123,7 +14414,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-rpr3-cw39-3pxh",
-              "modified": "2023-03-28T05:34:05.538681Z",
+              "modified": "2023-04-11T01:43:05.264712Z",
               "published": "2022-07-15T19:41:47Z",
               "aliases": [
                 "CVE-2020-10650"
@@ -14349,7 +14640,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-v3xw-c963-f5hc",
-              "modified": "2023-03-28T05:33:39.003106Z",
+              "modified": "2023-04-11T01:43:49.636119Z",
               "published": "2020-05-15T18:58:50Z",
               "aliases": [
                 "CVE-2020-11111"
@@ -14466,7 +14757,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-v585-23hc-c647",
-              "modified": "2023-03-28T05:42:24.639983Z",
+              "modified": "2023-04-11T01:46:59.531043Z",
               "published": "2021-11-19T20:13:06Z",
               "aliases": [
                 "CVE-2020-36186"
@@ -14701,7 +14992,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-vfqx-33qm-g869",
-              "modified": "2023-03-28T05:39:46.256666Z",
+              "modified": "2023-04-11T01:43:55.372389Z",
               "published": "2021-12-09T19:16:59Z",
               "aliases": [
                 "CVE-2020-36189"
@@ -14936,7 +15227,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-wh8g-3j2c-rqj5",
-              "modified": "2023-03-28T05:42:01.497143Z",
+              "modified": "2023-04-11T01:42:27.260185Z",
               "published": "2021-12-09T19:15:00Z",
               "aliases": [
                 "CVE-2020-35490"
@@ -15171,7 +15462,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-x2w5-5m2g-7h5m",
-              "modified": "2023-03-28T05:27:26.952022Z",
+              "modified": "2023-04-11T01:49:59.82694Z",
               "published": "2019-01-04T19:09:46Z",
               "aliases": [
                 "CVE-2018-14720"
@@ -15652,6 +15943,11 @@
             },
             {
               "ids": [
+                "GHSA-jjjh-jjxp-wpff"
+              ]
+            },
+            {
+              "ids": [
                 "GHSA-m6x4-97wx-4q27"
               ]
             },
@@ -15757,7 +16053,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-h4x4-5qp2-wp46",
-              "modified": "2023-03-28T05:25:02.613466Z",
+              "modified": "2023-04-11T01:32:24.969361Z",
               "published": "2018-12-21T17:46:54Z",
               "aliases": [
                 "CVE-2018-1000873"
@@ -15976,7 +16272,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-3mc7-4q67-w48m",
-              "modified": "2023-03-28T05:37:05.138328Z",
+              "modified": "2023-04-11T01:26:25.011148Z",
               "published": "2022-08-31T00:00:24Z",
               "aliases": [
                 "CVE-2022-25857"
@@ -16086,7 +16382,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-98wm-3w3q-mw94",
-              "modified": "2023-03-28T05:18:36.4817Z",
+              "modified": "2023-04-11T01:19:42.985927Z",
               "published": "2022-09-06T00:00:27Z",
               "aliases": [
                 "CVE-2022-38751"
@@ -16192,7 +16488,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-9w3m-gqgf-c4p9",
-              "modified": "2023-03-28T05:16:06.90524Z",
+              "modified": "2023-04-11T01:48:12.43782Z",
               "published": "2022-09-06T00:00:27Z",
               "aliases": [
                 "CVE-2022-38752"
@@ -16291,7 +16587,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-c4r9-r8fh-9vj2",
-              "modified": "2023-03-28T05:40:40.481638Z",
+              "modified": "2023-04-11T01:43:12.505793Z",
               "published": "2022-09-06T00:00:27Z",
               "aliases": [
                 "CVE-2022-38749"
@@ -16394,7 +16690,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-hhhw-99gj-p3c3",
-              "modified": "2023-03-28T05:32:59.913235Z",
+              "modified": "2023-04-11T01:49:44.024399Z",
               "published": "2022-09-06T00:00:27Z",
               "aliases": [
                 "CVE-2022-38750"
@@ -16496,7 +16792,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-mjmj-j48q-9wg2",
-              "modified": "2023-03-28T05:43:14.807248Z",
+              "modified": "2023-04-11T01:48:59.86874Z",
               "published": "2022-12-12T21:19:47Z",
               "aliases": [
                 "CVE-2022-1471"
@@ -16630,7 +16926,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-rvwf-54qp-4r6v",
-              "modified": "2023-03-28T05:28:41.087393Z",
+              "modified": "2023-04-11T01:45:17.437741Z",
               "published": "2021-06-04T21:37:45Z",
               "aliases": [
                 "CVE-2017-18640"
@@ -16955,7 +17251,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-w37g-rhq8-7m4j",
-              "modified": "2023-03-28T05:31:24.26648Z",
+              "modified": "2023-04-11T01:28:17.3367Z",
               "published": "2022-11-11T19:00:31Z",
               "aliases": [
                 "CVE-2022-41854"

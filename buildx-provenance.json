@@ -1,0 +1,380 @@
+{
+  "buildConfig": {
+    "digestMapping": {
+      "sha256:703819ccce910a2e4fc42aaee9e82590e8006c797720e9044333032a0e61aec9": "step1",
+      "sha256:ab34a08b95a7eea792cd692cef93f45b55a17a6e79c566f80714a21823e570dc": "step0",
+      "sha256:d1a218567bdb05403e952b4c38abc2714a240cddaee85fc8e563f178c22fb309": "step4",
+      "sha256:db108d3a4ec4e8a1d6b55afec6240ad0c2e9ac0e034555daa5903152238aa03e": "step3",
+      "sha256:f581f00e6c0475ac8e875c00a7393111e61666e9f37d950d6272d2ca2ffc9f12": "step2"
+    },
+    "llbDefinition": [
+      {
+        "id": "step0",
+        "op": {
+          "Op": {
+            "source": {
+              "identifier": "docker-image://docker.io/library/eclipse-temurin:11@sha256:3ac901bd401f38e8e7e64f8ca1864248ee09e6822383b1eca6c12e946d2ffcbe"
+            }
+          },
+          "constraints": {},
+          "platform": {
+            "Architecture": "amd64",
+            "OS": "linux"
+          }
+        }
+      },
+      {
+        "id": "step1",
+        "op": {
+          "Op": {
+            "source": {
+              "attrs": {
+                "local.followpaths": "[\"bom.json\",\"target/naftis-0.0.1-SNAPSHOT.jar\"]",
+                "local.sharedkeyhint": "context"
+              },
+              "identifier": "local://context"
+            }
+          },
+          "constraints": {}
+        }
+      },
+      {
+        "id": "step2",
+        "inputs": [
+          "step0:0",
+          "step1:0"
+        ],
+        "op": {
+          "Op": {
+            "file": {
+              "actions": [
+                {
+                  "Action": {
+                    "copy": {
+                      "allowEmptyWildcard": true,
+                      "allowWildcard": true,
+                      "createDestPath": true,
+                      "dest": "/app.jar",
+                      "dirCopyContents": true,
+                      "followSymlink": true,
+                      "mode": -1,
+                      "src": "/target/naftis-0.0.1-SNAPSHOT.jar",
+                      "timestamp": -1
+                    }
+                  },
+                  "input": 0,
+                  "output": 0,
+                  "secondaryInput": 1
+                }
+              ]
+            }
+          },
+          "constraints": {},
+          "platform": {
+            "Architecture": "amd64",
+            "OS": "linux"
+          }
+        }
+      },
+      {
+        "id": "step3",
+        "inputs": [
+          "step2:0",
+          "step1:0"
+        ],
+        "op": {
+          "Op": {
+            "file": {
+              "actions": [
+                {
+                  "Action": {
+                    "copy": {
+                      "allowEmptyWildcard": true,
+                      "allowWildcard": true,
+                      "createDestPath": true,
+                      "dest": "/bom.json",
+                      "dirCopyContents": true,
+                      "followSymlink": true,
+                      "mode": -1,
+                      "src": "/bom.json",
+                      "timestamp": -1
+                    }
+                  },
+                  "input": 0,
+                  "output": 0,
+                  "secondaryInput": 1
+                }
+              ]
+            }
+          },
+          "constraints": {},
+          "platform": {
+            "Architecture": "amd64",
+            "OS": "linux"
+          }
+        }
+      },
+      {
+        "id": "step4",
+        "inputs": [
+          "step3:0"
+        ],
+        "op": {
+          "Op": null
+        }
+      }
+    ]
+  },
+  "buildType": "https://mobyproject.org/buildkit@v1",
+  "builder": {
+    "id": "https://github.com/mgfeller/naftis/actions/runs/4724314193"
+  },
+  "invocation": {
+    "configSource": {
+      "entryPoint": "Dockerfile"
+    },
+    "environment": {
+      "platform": "linux/amd64"
+    },
+    "parameters": {
+      "args": {
+        "build-arg:JAR_FILE": "target/naftis-0.0.1-SNAPSHOT.jar"
+      },
+      "frontend": "dockerfile.v0",
+      "locals": [
+        {
+          "name": "context"
+        },
+        {
+          "name": "dockerfile"
+        }
+      ]
+    }
+  },
+  "materials": [
+    {
+      "digest": {
+        "sha256": "3ac901bd401f38e8e7e64f8ca1864248ee09e6822383b1eca6c12e946d2ffcbe"
+      },
+      "uri": "pkg:docker/eclipse-temurin@11?platform=linux%2Famd64"
+    }
+  ],
+  "metadata": {
+    "buildFinishedOn": "2023-04-17T18:03:14.680306017Z",
+    "buildInvocationID": "daxzvore2hts6bkbrux1brywp",
+    "buildStartedOn": "2023-04-17T18:03:06.108153798Z",
+    "completeness": {
+      "environment": true,
+      "materials": false,
+      "parameters": true
+    },
+    "https://mobyproject.org/buildkit@v1#metadata": {
+      "layers": {
+        "step0:0": [
+          [
+            {
+              "digest": "sha256:74ac377868f863e123f24c409f79709f7563fa464557c36a09cf6f85c8b92b7f",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 30429963
+            },
+            {
+              "digest": "sha256:b9cabe75b440d785eb2f20422368c248b28fd9c219a5d5db5aacb7de3d43f02c",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 12432056
+            },
+            {
+              "digest": "sha256:cff6df0cca35339f27f423da442c8f93f3b1f048fa9427118e2337be93ea2adf",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 198487726
+            },
+            {
+              "digest": "sha256:342f22ed35dc09675cc40ee37c7359aaec153ea6dc7c065e192c79429d8d57e5",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 174
+            }
+          ],
+          [
+            {
+              "digest": "sha256:74ac377868f863e123f24c409f79709f7563fa464557c36a09cf6f85c8b92b7f",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 30429963
+            },
+            {
+              "digest": "sha256:b9cabe75b440d785eb2f20422368c248b28fd9c219a5d5db5aacb7de3d43f02c",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 12432056
+            },
+            {
+              "digest": "sha256:cff6df0cca35339f27f423da442c8f93f3b1f048fa9427118e2337be93ea2adf",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 198487726
+            },
+            {
+              "digest": "sha256:342f22ed35dc09675cc40ee37c7359aaec153ea6dc7c065e192c79429d8d57e5",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 174
+            }
+          ]
+        ],
+        "step2:0": [
+          [
+            {
+              "digest": "sha256:74ac377868f863e123f24c409f79709f7563fa464557c36a09cf6f85c8b92b7f",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 30429963
+            },
+            {
+              "digest": "sha256:b9cabe75b440d785eb2f20422368c248b28fd9c219a5d5db5aacb7de3d43f02c",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 12432056
+            },
+            {
+              "digest": "sha256:cff6df0cca35339f27f423da442c8f93f3b1f048fa9427118e2337be93ea2adf",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 198487726
+            },
+            {
+              "digest": "sha256:342f22ed35dc09675cc40ee37c7359aaec153ea6dc7c065e192c79429d8d57e5",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 174
+            },
+            {
+              "digest": "sha256:600a73c3505a38231b57416ba2e9fe6e4d7c3c377736e1be81b99e32dc6fb4d4",
+              "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+              "size": 22071525
+            }
+          ]
+        ],
+        "step3:0": [
+          [
+            {
+              "digest": "sha256:74ac377868f863e123f24c409f79709f7563fa464557c36a09cf6f85c8b92b7f",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 30429963
+            },
+            {
+              "digest": "sha256:b9cabe75b440d785eb2f20422368c248b28fd9c219a5d5db5aacb7de3d43f02c",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 12432056
+            },
+            {
+              "digest": "sha256:cff6df0cca35339f27f423da442c8f93f3b1f048fa9427118e2337be93ea2adf",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 198487726
+            },
+            {
+              "digest": "sha256:342f22ed35dc09675cc40ee37c7359aaec153ea6dc7c065e192c79429d8d57e5",
+              "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+              "size": 174
+            },
+            {
+              "digest": "sha256:600a73c3505a38231b57416ba2e9fe6e4d7c3c377736e1be81b99e32dc6fb4d4",
+              "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+              "size": 22071525
+            },
+            {
+              "digest": "sha256:d6a5699dde89a2a8f4b638c63f8c95b2129a2706b62fbef18787db357fe45334",
+              "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+              "size": 42507
+            }
+          ]
+        ]
+      },
+      "source": {
+        "infos": [
+          {
+            "data": "RlJPTSBlY2xpcHNlLXRlbXVyaW46MTEKTUFJTlRBSU5FUiBtZ2ZlbGxlckBtZ2ZlbGxlci5uZXQKVk9MVU1FIC90bXAKQVJHIEpBUl9GSUxFCkNPUFkgJHtKQVJfRklMRX0gYXBwLmphcgpDT1BZIGJvbS5qc29uIGJvbS5qc29uCkVOVFJZUE9JTlQgWyJqYXZhIiwiLURqYXZhLnNlY3VyaXR5LmVnZD1maWxlOi9kZXYvLi91cmFuZG9tIiwiLWphciIsIi9hcHAuamFyIl0=",
+            "digestMapping": {
+              "sha256:b233570d7f771b77ab95454f2f5107bdf61deb16d708af293de499f1e9f7ee5a": "step1",
+              "sha256:c54dab362164451b17568b1ce3fce4f1d204836f069ec44323b41cde21074f23": "step0"
+            },
+            "filename": "Dockerfile",
+            "llbDefinition": [
+              {
+                "id": "step0",
+                "op": {
+                  "Op": {
+                    "source": {
+                      "attrs": {
+                        "local.differ": "none",
+                        "local.followpaths": "[\"Dockerfile\",\"Dockerfile.dockerignore\",\"dockerfile\"]",
+                        "local.sharedkeyhint": "dockerfile"
+                      },
+                      "identifier": "local://dockerfile"
+                    }
+                  },
+                  "constraints": {}
+                }
+              },
+              {
+                "id": "step1",
+                "inputs": [
+                  "step0:0"
+                ],
+                "op": {
+                  "Op": null
+                }
+              }
+            ]
+          }
+        ],
+        "locations": {
+          "step0": {
+            "locations": [
+              {
+                "ranges": [
+                  {
+                    "end": {
+                      "line": 1
+                    },
+                    "start": {
+                      "line": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "step1": {},
+          "step2": {
+            "locations": [
+              {
+                "ranges": [
+                  {
+                    "end": {
+                      "line": 5
+                    },
+                    "start": {
+                      "line": 5
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "step3": {
+            "locations": [
+              {
+                "ranges": [
+                  {
+                    "end": {
+                      "line": 6
+                    },
+                    "start": {
+                      "line": 6
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "vcs": {
+        "revision": "4f9d0c66b948202d1d0d6c50c8d54a9277a212f1",
+        "source": "https://github.com/mgfeller/naftis"
+      }
+    },
+    "reproducible": false
+  }
+}
