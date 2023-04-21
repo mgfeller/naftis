@@ -1,11 +1,11 @@
 {
   "buildConfig": {
     "digestMapping": {
-      "sha256:2a7b55f5367a2551c42ca8667ad5ab5eaf6e82f02e5f3148d26d14e272c1dbe2": "step3",
-      "sha256:4938ef34dbb83364f219bf38ea6381a83a6f07da4aa0f24a4f4d93fd7df13a13": "step2",
-      "sha256:95c5f5b25b6da776a9fa8393b958d4d4e4ceedf7f2d87dacdba0c1a9a877e609": "step1",
+      "sha256:8a58b520f20e6f8f4f817e2964ca8b831dcdbc3158c4d5f0514b8ffbac73bbfb": "step4",
+      "sha256:a8e9c053912b7d997f06961311340cae1b9dd3281baaf86e6a49eb91e6885d12": "step3",
       "sha256:ab34a08b95a7eea792cd692cef93f45b55a17a6e79c566f80714a21823e570dc": "step0",
-      "sha256:ff6bd0494d542d9ecab2dbd6583df4612371190fb2d783ce2579a0fb5dc742a2": "step4"
+      "sha256:b901a13a197768e676fa4f7f6be10375b1c157f1cc9850597b9283a32954b466": "step1",
+      "sha256:c30787eaab35c8f55d781af0a85d46ef17be8f05cd0d03f6cbefc3cd9a97f19d": "step2"
     },
     "llbDefinition": [
       {
@@ -127,7 +127,7 @@
   },
   "buildType": "https://mobyproject.org/buildkit@v1",
   "builder": {
-    "id": "https://github.com/mgfeller/naftis/actions/runs/4724379677"
+    "id": "https://github.com/mgfeller/naftis/actions/runs/4765081569"
   },
   "invocation": {
     "configSource": {
@@ -160,9 +160,9 @@
     }
   ],
   "metadata": {
-    "buildFinishedOn": "2023-04-17T18:09:26.46741017Z",
-    "buildInvocationID": "j1s7966i1xfiw00l42gu8gcgy",
-    "buildStartedOn": "2023-04-17T18:09:17.291324018Z",
+    "buildFinishedOn": "2023-04-21T12:55:05.776385716Z",
+    "buildInvocationID": "zi3kwret5yjzzv185ky0ts01s",
+    "buildStartedOn": "2023-04-21T12:54:57.191179659Z",
     "completeness": {
       "environment": true,
       "materials": false,
@@ -239,9 +239,9 @@
               "size": 174
             },
             {
-              "digest": "sha256:544a6ef2a782d50b1419365308a4479f03ca88a83890f4861a6ee2de8dab69a2",
+              "digest": "sha256:b3ec14963a27ffde1e7b43254cbb51bd803973a22e32a27abfba75227fa301be",
               "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-              "size": 22071519
+              "size": 22071525
             }
           ]
         ],
@@ -268,12 +268,12 @@
               "size": 174
             },
             {
-              "digest": "sha256:544a6ef2a782d50b1419365308a4479f03ca88a83890f4861a6ee2de8dab69a2",
+              "digest": "sha256:b3ec14963a27ffde1e7b43254cbb51bd803973a22e32a27abfba75227fa301be",
               "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-              "size": 22071519
+              "size": 22071525
             },
             {
-              "digest": "sha256:8b39f531cdfe0098e04381fbc4d314547ef1bd8262b046732bd70b9c9c4d43cf",
+              "digest": "sha256:8e49993b8138aacbd1060e54519b93c316764772c3987ea5c5ef3f58273f5308",
               "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
               "size": 42506
             }
@@ -285,8 +285,8 @@
           {
             "data": "RlJPTSBlY2xpcHNlLXRlbXVyaW46MTEKTUFJTlRBSU5FUiBtZ2ZlbGxlckBtZ2ZlbGxlci5uZXQKVk9MVU1FIC90bXAKQVJHIEpBUl9GSUxFCkNPUFkgJHtKQVJfRklMRX0gYXBwLmphcgpDT1BZIGJvbS5qc29uIGJvbS5qc29uCkVOVFJZUE9JTlQgWyJqYXZhIiwiLURqYXZhLnNlY3VyaXR5LmVnZD1maWxlOi9kZXYvLi91cmFuZG9tIiwiLWphciIsIi9hcHAuamFyIl0=",
             "digestMapping": {
-              "sha256:29490475875c0957867dd5ecf005e84edcc56a126b5cc8aafc4e30c156dce283": "step1",
-              "sha256:6ba3076cddb2afe49a658ac43facefef8dfa83ab13643f8e1b6c1850b88be6b9": "step0"
+              "sha256:843886977545f37d57e42643ca4cf02c0a0b3e7112e59c39382ae228923b4119": "step0",
+              "sha256:976f64b70fee52f67a411a061900f84eabc60d1903dc959df53a3f7f6e3d152d": "step1"
             },
             "filename": "Dockerfile",
             "llbDefinition": [
@@ -371,7 +371,7 @@
         }
       },
       "vcs": {
-        "revision": "274edacb9119a22ea34900150cd319bfdf1caee3",
+        "revision": "2c47fc7e186a8726e195b7844d1ba67c44ef45f8",
         "source": "https://github.com/mgfeller/naftis"
       }
     },

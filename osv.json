@@ -26887,7 +26887,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-564r-hj7v-mcr5",
-              "modified": "2023-04-11T01:47:06.012259Z",
+              "modified": "2023-04-20T14:30:47.627893Z",
               "published": "2023-03-23T21:30:19Z",
               "aliases": [
                 "CVE-2023-20861"
@@ -27225,6 +27225,10 @@
                 {
                   "type": "PACKAGE",
                   "url": "https://github.com/spring-projects/spring-framework"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20230420-0007/"
                 },
                 {
                   "type": "WEB",
