@@ -93,6 +93,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
             <plugin>
                 <!-- https://snyk.io/blog/create-sboms-java-maven-gradle/ -->
                 <groupId>org.cyclonedx</groupId>
@@ -123,6 +124,7 @@
                     <verbose>true</verbose>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
