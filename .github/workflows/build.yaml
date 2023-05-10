@@ -66,7 +66,9 @@ jobs:
             migfe/naftis:latest
             migfe/naftis:0.0.1
           build-args: JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar
+
           provenance: mode=max
+
           # inspect provenance using:
           # docker buildx imagetools inspect migfe/naftis:latest  --format "{{ json .Provenance.SLSA }}"
           # doesn't seem to work yet, warnings in build. uses also syft.
@@ -83,6 +85,7 @@ jobs:
         run: ./osv-scanner --docker migfe/naftis:latest --format json --skip-git > ./osv-docker-image.json
 
       # create SBOM using anchore/Syft (corresponds to docker sbom)
+
       - id: docker-sbom
         name: Docker image SBOM using anchore/Syft
         uses: anchore/sbom-action@v0
@@ -145,13 +148,13 @@ jobs:
   # This step calls the container workflow to generate provenance and push it to
   # the container registry.
   # https://github.com/slsa-framework/slsa-github-generator/blob/main/internal/builders/container/README.md#getting-started
+
   provenance:
     needs: [build]
     permissions:
       actions: read # for detecting the GitHub Actions environment.
       id-token: write # for creating OIDC tokens for signing.
       packages: write # for uploading attestations.
-    #  if: startsWith(github.ref, 'refs/tags/')
     uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v1.5.0
     with:
       image: migfe/naftis
