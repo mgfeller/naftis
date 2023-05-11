@@ -14414,7 +14414,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-rpr3-cw39-3pxh",
-              "modified": "2023-04-11T01:43:05.264712Z",
+              "modified": "2023-05-01T14:02:50.241816Z",
               "published": "2022-07-15T19:41:47Z",
               "aliases": [
                 "CVE-2020-10650"
@@ -14609,6 +14609,10 @@
                 {
                   "type": "PACKAGE",
                   "url": "https://github.com/FasterXML/jackson-databind"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2023/04/msg00032.html"
                 },
                 {
                   "type": "WEB",
@@ -16792,7 +16796,7 @@
             {
               "schema_version": "1.4.0",
               "id": "GHSA-mjmj-j48q-9wg2",
-              "modified": "2023-04-11T01:48:59.86874Z",
+              "modified": "2023-04-25T21:19:34.033433Z",
               "published": "2022-12-12T21:19:47Z",
               "aliases": [
                 "CVE-2022-1471"
@@ -16906,6 +16910,10 @@
                 },
                 {
                   "type": "WEB",
+                  "url": "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc"
+                },
+                {
+                  "type": "WEB",
                   "url": "https://snyk.io/blog/unsafe-deserialization-snakeyaml-java-cve-2022-1471/"
                 },
                 {
@@ -16915,6 +16923,7 @@
               ],
               "database_specific": {
                 "cwe_ids": [
+                  "CWE-20",
                   "CWE-502"
                 ],
                 "github_reviewed": true,
