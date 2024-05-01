@@ -1,9 +1,11 @@
 # naftis
 
+naftis is a simple service that can be used to test a service mesh implementation.
+
 ## dockerize
 replace _v1_ by the correct version:
 
-````sh 
+````sh
 docker build --tag=naftis:v1 --rm=true --build-arg JAR_FILE=target/naftis-0.0.1-SNAPSHOT.jar . 
 ````
 
