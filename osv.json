@@ -21178,7 +21178,7 @@
             {
               "schema_version": "1.6.0",
               "id": "GHSA-7w75-32cg-r6g2",
-              "modified": "2024-04-11T16:31:34.021786Z",
+              "modified": "2024-05-02T19:02:28.402038Z",
               "published": "2024-03-13T18:31:34Z",
               "aliases": [
                 "BIT-tomcat-2024-24549",
@@ -21866,6 +21866,10 @@
                 {
                   "type": "WEB",
                   "url": "https://security.netapp.com/advisory/ntap-20240402-0002"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2024/03/13/3"
                 }
               ],
               "database_specific": {
@@ -31714,7 +31718,7 @@
             {
               "schema_version": "1.6.0",
               "id": "GHSA-v682-8vv8-vpwr",
-              "modified": "2024-04-11T15:57:38.990709Z",
+              "modified": "2024-05-02T19:04:15.902224Z",
               "published": "2024-03-13T18:31:34Z",
               "aliases": [
                 "BIT-tomcat-2024-23672",
@@ -32402,6 +32406,10 @@
                 {
                   "type": "WEB",
                   "url": "https://security.netapp.com/advisory/ntap-20240402-0002"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2024/03/13/4"
                 }
               ],
               "database_specific": {
