@@ -2,7 +2,7 @@
 
 naftis is a simple service that can be used to test for instance a service mesh implementation.
 
-It has a REST interface.
+It has a REST interface, see below for some example calls.
 
 ## dockerize
 replace _v1_ by the correct version:
